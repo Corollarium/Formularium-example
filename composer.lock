@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "corollarium/formularium",
-            "version": "0.1.0",
+            "version": "0.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Corollarium/Formularium.git",
-                "reference": "0c219f72c56096f70cefbe06814235678acf7de8"
+                "reference": "1de42a4d9ab02e6d79c0dcd4496508eec2fe3505"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Corollarium/Formularium/zipball/0c219f72c56096f70cefbe06814235678acf7de8",
-                "reference": "0c219f72c56096f70cefbe06814235678acf7de8",
+                "url": "https://api.github.com/repos/Corollarium/Formularium/zipball/1de42a4d9ab02e6d79c0dcd4496508eec2fe3505",
+                "reference": "1de42a4d9ab02e6d79c0dcd4496508eec2fe3505",
                 "shasum": ""
             },
             "require": {
@@ -36,29 +36,7 @@
                     "Formularium\\": "Formularium/"
                 }
             },
-            "scripts": {
-                "make:datatype": [
-                    "bash ./util/makeDatatype.sh"
-                ],
-                "make:framework": [
-                    "bash ./util/makeFramework.sh"
-                ],
-                "makeKitchenSink": [
-                    "php ./util/makeKitchenSink.php"
-                ],
-                "format": [
-                    "vendor/bin/ecs check Formularium/ --level clean-code --fix && vendor/bin/ecs check Formularium/ --level psr12 --fix"
-                ],
-                "stan": [
-                    "vendor/bin/phpstan analyse Formularium"
-                ],
-                "coverage": [
-                    "mkdir build 2> /dev/null && ./vendor/bin/phpunit --bootstrap vendor/autoload.php --whitelist Formularium --coverage-html build/coverage-report tests/"
-                ],
-                "test": [
-                    "./vendor/bin/phpunit --bootstrap vendor/autoload.php tests/"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -66,7 +44,8 @@
             "homepage": "https://github.com/Corollarium/Formularium",
             "keywords": [
                 "form"
-            ]
+            ],
+            "time": "2019-12-12T19:05:23+00:00"
         },
         {
             "name": "fzaninotto/faker",
