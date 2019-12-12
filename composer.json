@@ -7,17 +7,8 @@
     "homepage": "https://github.com/Corollarium/FormulariumApp",
     "require": {
         "php": ">=7.1.0",
-        "corollarium/formularium": "@dev"
+        "corollarium/formularium": "^0.1.0"
     },
-    "repositories": [
-        {
-            "type": "path",
-            "url": "../formularium/",
-            "options": {
-                "symlink": true
-            }
-        }
-    ],
     "scripts": {
     }
 }

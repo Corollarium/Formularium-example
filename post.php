@@ -44,8 +44,10 @@ $validation = $model->validate($_POST);
 ?>
     </div>
     
-    <footer>
-        <a href="https://github.com/Corollarium/Formularium">Formularium on GitHub</a>
+    <footer style="text-align: center; margin-top: 2em;">
+        <small>
+            See <a href="https://github.com/Corollarium/Formularium">Formularium on GitHub</a>
+        </small>
         <?php echo FrameworkComposer::htmlFooter(); ?>
     </footer>
 </div>
