@@ -1,0 +1,23 @@
+{
+    "name": "corollarium/formulariumapp",
+    "description": "Sample pure PHP app using formularium",
+    "type": "application",
+    "license": "MIT",
+    "version": "1.0.0",
+    "homepage": "https://github.com/Corollarium/FormulariumApp",
+    "require": {
+        "php": ">=7.1.0",
+        "corollarium/formularium": "@dev"
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../formularium/",
+            "options": {
+                "symlink": true
+            }
+        }
+    ],
+    "scripts": {
+    }
+}
