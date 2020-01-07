@@ -11,7 +11,7 @@ A simple pure PHP app showing how to use [Formularium](https://github.com/Coroll
 
 ## About
 
-This is a minimum simple example of how to use Formularium, using plain PHP without any PHP frameworks. It uses [Bootstrap](https://getbootstrap.com/) for styling. It only uses the browser validation. We do not validate the `aaaaa` field with a pattern on purpose so you can submit and see the backend validation too.
+This is a minimum simple example of how to use Formularium, using plain PHP without any PHP frameworks. It uses [Bootstrap](https://getbootstrap.com/) for styling. It only uses native browser validation, without extra JS libs. We do not validate the `aaaaa` field with a pattern on purpose so you can submit and see the backend validation at work too.
 
 - [index.php](https://github.com/Corollarium/Formularium-example/blob/master/index.php): Renders a form.
 - [model.php](https://github.com/Corollarium/Formularium-example/blob/master/model.php): The object model, with all its fields.
