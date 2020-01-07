@@ -3,6 +3,7 @@
 namespace Formularium\Datatype;
 
 use Formularium\Field;
+use Formularium\Model;
 use Formularium\Exception\ValidatorException;
 
 class Datatype_aaaaa extends \Formularium\Datatype\Datatype_string
@@ -17,7 +18,7 @@ class Datatype_aaaaa extends \Formularium\Datatype\Datatype_string
         return 'aaaaa';
     }
 
-    public function validate($value, Field $field)
+    public function validate($value, Field $field, Model $model = null)
     {
         $value = parent::validate($value, $field);
         if ($value === 'aaaaa') {

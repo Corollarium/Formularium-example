@@ -56,7 +56,7 @@ function modelData() {
                 ],
                 'extensions' => [
                     Renderable::LABEL => 'This is a custom datatype',
-                    Renderable::COMMENT => 'Fill this with aaaaa',
+                    Renderable::COMMENT => 'Fill this with aaaaa to validate properly',
                     Renderable_string::NO_AUTOCOMPLETE => true,
                     Renderable::PLACEHOLDER => "Type aaaaa here"
                 ]
