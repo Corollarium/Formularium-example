@@ -8,6 +8,10 @@ use Formularium\Frontend\HTML\Renderable\Renderable_number;
 use Formularium\Frontend\HTML\Renderable\Renderable_string;
 use Formularium\Model;
 use Formularium\Renderable;
+use Formularium\Validator\Max;
+use Formularium\Validator\MaxLength;
+use Formularium\Validator\Min;
+use Formularium\Validator\MinLength;
 
 // our own datatype. You can use autoload for this, too.
 require('./Datatype_aaaaa.php');
@@ -21,9 +25,15 @@ function modelData() {
             'myString' => [
                 'datatype' => 'string',
                 'validators' => [
-                    Datatype_string::MIN_LENGTH => 3,
-                    Datatype_string::MAX_LENGTH => 10,
-                    Datatype::REQUIRED => true,
+                    MinLength::class => [
+                        'value' => 3,
+                    ],
+                    MaxLength::class => [
+                        'value' => 10,
+                    ],
+                    Datatype::REQUIRED => [
+                        'value' => true,
+                    ]
                 ],
                 'extensions' => [
                     Renderable::LABEL => 'This is some string',
@@ -37,9 +47,15 @@ function modelData() {
             'someInteger' => [
                 'datatype' => 'integer',
                 'validators' => [
-                    Datatype_integer::MIN => 4,
-                    Datatype_integer::MAX => 30,
-                    Datatype::REQUIRED => true,
+                    Min::class => [
+                        'value' => 4,
+                    ],
+                    Max::class => [
+                        'value' => 30,
+                    ],
+                    Datatype::REQUIRED => [
+                        'value' => true,
+                    ]
                 ],
                 'extensions' => [
                     Renderable_number::STEP => 2,
@@ -52,7 +68,9 @@ function modelData() {
             'myaaaaa' => [
                 'datatype' => 'aaaaa',
                 'validators' => [
-                    Datatype::REQUIRED => true,
+                    Datatype::REQUIRED => [
+                        'value' => true,
+                    ]
                 ],
                 'extensions' => [
                     Renderable::LABEL => 'This is a custom datatype',

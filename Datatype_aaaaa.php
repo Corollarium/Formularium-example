@@ -5,6 +5,7 @@ namespace Formularium\Datatype;
 use Formularium\Field;
 use Formularium\Model;
 use Formularium\Exception\ValidatorException;
+use Formularium\Validator\Equals;
 
 class Datatype_aaaaa extends \Formularium\Datatype\Datatype_string
 {
@@ -18,12 +19,12 @@ class Datatype_aaaaa extends \Formularium\Datatype\Datatype_string
         return 'aaaaa';
     }
 
-    public function validate($value, Field $field, Model $model = null)
+    public function validate($value, Model $model = null)
     {
-        $value = parent::validate($value, $field);
-        if ($value === 'aaaaa') {
-            return $value;
-        }
-        throw new ValidatorException('Not aaaaa');
+        $value = parent::validate($value, $model);
+        
+        Equals::validate($value, ['value' => 'aaaaa'], $this, $model);
+
+        return $value;
     }
 }
