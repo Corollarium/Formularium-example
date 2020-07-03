@@ -1,19 +1,15 @@
 <?php
 
 use Formularium\Datatype;
-use Formularium\Datatype\Datatype_integer;
-use Formularium\Datatype\Datatype_string;
-use Formularium\FrameworkComposer;
 use Formularium\Frontend\HTML\Renderable\Renderable_number;
 use Formularium\Frontend\HTML\Renderable\Renderable_string;
-use Formularium\Model;
 use Formularium\Renderable;
 use Formularium\Validator\Max;
 use Formularium\Validator\MaxLength;
 use Formularium\Validator\Min;
 use Formularium\Validator\MinLength;
 
-// our own datatype. You can use autoload for this, too.
+// our own datatype. You can (and should) use autoload for this, too.
 require('./Datatype_aaaaa.php');
 require('./Renderable_aaaaa.php');
 
@@ -35,7 +31,7 @@ function modelData() {
                         'value' => true,
                     ]
                 ],
-                'extensions' => [
+                'renderable' => [
                     Renderable::LABEL => 'This is some string',
                     Renderable::COMMENT => 'At least 3 characters but no more than 10',
                     Renderable_string::NO_AUTOCOMPLETE => true,
@@ -57,7 +53,7 @@ function modelData() {
                         'value' => true,
                     ]
                 ],
-                'extensions' => [
+                'renderable' => [
                     Renderable_number::STEP => 2,
                     Renderable_string::NO_AUTOCOMPLETE => true,
                     Renderable::LABEL => 'Some integer',
@@ -72,7 +68,7 @@ function modelData() {
                         'value' => true,
                     ]
                 ],
-                'extensions' => [
+                'renderable' => [
                     Renderable::LABEL => 'This is a custom datatype',
                     Renderable::COMMENT => 'Fill this with aaaaa to validate properly',
                     Renderable_string::NO_AUTOCOMPLETE => true,
