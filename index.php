@@ -6,9 +6,9 @@ require('model.php');
 use Formularium\FrameworkComposer;
 use Formularium\Model;
 
-// set your framework composition statically.
+// set your framework composition.
 // For example, this builds HTML using Bootstrap as CSS and the Vue framework.
-FrameworkComposer::set(['HTML', 'Bootstrap']);
+$framework = FrameworkComposer::create(['HTML', 'Bootstrap']);
 
 $model = Model::fromStruct(modelData());
 ?><!DOCTYPE html>
@@ -16,7 +16,7 @@ $model = Model::fromStruct(modelData());
 <head>
     <meta charset='utf-8'>
     <title>Formularium pure PHP</title>
-    <?php echo FrameworkComposer::htmlHead(); ?>
+    <?php echo $framework->htmlHead(); ?>
 </head>
 <body>
 <div class='container'>
@@ -34,7 +34,7 @@ $model = Model::fromStruct(modelData());
         <small>
             See <a href="https://github.com/Corollarium/Formularium">Formularium on GitHub</a>
         </small>
-        <?php echo FrameworkComposer::htmlFooter(); ?>
+        <?php echo $framework->htmlFooter(); ?>
     </footer>
 </div>
 </html>

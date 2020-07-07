@@ -6,8 +6,8 @@ require('model.php');
 use Formularium\FrameworkComposer;
 use Formularium\Model;
 
-// set your framework composition statically.
-FrameworkComposer::set(['HTML', 'Bootstrap']);
+// set your framework composition
+$framework = FrameworkComposer::create(['HTML', 'Bootstrap']);
 // build the model
 $model = Model::fromStruct(modelData());
 
@@ -19,7 +19,7 @@ $validation = $model->validate($_POST);
 <head>
     <meta charset='utf-8'>
     <title>Formularium pure PHP</title>
-    <?php echo FrameworkComposer::htmlHead(); ?>
+    <?php echo $framework->htmlHead(); ?>
 </head>
 <body>
 <div class='container'>
@@ -48,7 +48,7 @@ $validation = $model->validate($_POST);
         <small>
             See <a href="https://github.com/Corollarium/Formularium">Formularium on GitHub</a>
         </small>
-        <?php echo FrameworkComposer::htmlFooter(); ?>
+        <?php echo $framework->htmlFooter(); ?>
     </footer>
 </div>
 </html>
