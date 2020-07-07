@@ -26,7 +26,7 @@ $model = Model::fromStruct(modelData());
     </p>
     <form method="POST" action="/post.php">
 <?php // render a form 
-    echo $model->editable();
+    echo $model->editable($framework);
 ?>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>

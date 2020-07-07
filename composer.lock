@@ -4,25 +4,26 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c4cfcb1c48d7f4952e0bacee27f40e2e",
+    "content-hash": "652f0ed0d6c1045db86414871ad1710c",
     "packages": [
         {
             "name": "corollarium/formularium",
-            "version": "0.2.0",
+            "version": "0.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Corollarium/Formularium.git",
-                "reference": "f53c15540b51e09d4da1fe9cd4649c953b76d8f9"
+                "reference": "286ca226427ee7833582c8c5ab9185b5f442ee0b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Corollarium/Formularium/zipball/f53c15540b51e09d4da1fe9cd4649c953b76d8f9",
-                "reference": "f53c15540b51e09d4da1fe9cd4649c953b76d8f9",
+                "url": "https://api.github.com/repos/Corollarium/Formularium/zipball/286ca226427ee7833582c8c5ab9185b5f442ee0b",
+                "reference": "286ca226427ee7833582c8c5ab9185b5f442ee0b",
                 "shasum": ""
             },
             "require": {
                 "ezyang/htmlpurifier": "^4.12",
                 "fzaninotto/faker": "^1.9",
+                "haydenpierce/class-finder": "^0.4.2",
                 "php": ">=7.2.0",
                 "respect/validation": "^1.1",
                 "thecodingmachine/safe": "^1.1"
@@ -56,7 +57,7 @@
             "keywords": [
                 "form"
             ],
-            "time": "2020-07-02T21:24:15+00:00"
+            "time": "2020-07-07T21:41:57+00:00"
         },
         {
             "name": "ezyang/htmlpurifier",
@@ -157,6 +158,48 @@
                 "fixtures"
             ],
             "time": "2019-12-12T13:22:17+00:00"
+        },
+        {
+            "name": "haydenpierce/class-finder",
+            "version": "0.4.2",
+            "source": {
+                "type": "git",
+                "url": "https://gitlab.com/hpierce1102/ClassFinder.git",
+                "reference": "b8393ea73d25010e3e946e317d0e8797c788cb20"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://gitlab.com/api/v4/projects/hpierce1102%2FClassFinder/repository/archive.zip?sha=b8393ea73d25010e3e946e317d0e8797c788cb20",
+                "reference": "b8393ea73d25010e3e946e317d0e8797c788cb20",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "mikey179/vfsstream": "^1.6",
+                "phpunit/phpunit": "4.8.36"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "HaydenPierce\\ClassFinder\\": "src/",
+                    "HaydenPierce\\ClassFinder\\UnitTest\\": "test/unit"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Hayden Pierce",
+                    "email": "hayden@haydenpierce.com"
+                }
+            ],
+            "description": "A library that can provide of a list of classes in a given namespace",
+            "time": "2020-04-20T17:38:50+00:00"
         },
         {
             "name": "respect/validation",

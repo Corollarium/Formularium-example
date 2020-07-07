@@ -39,7 +39,7 @@ $validation = $model->validate($_POST);
         $validated = $validation['validated'];
 
         // render a view
-        echo $model->viewable($validated);
+        echo $model->viewable($framework, $validated);
     }
 ?>
     </div>
