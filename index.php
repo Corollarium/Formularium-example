@@ -5,12 +5,24 @@ require('model.php');
 
 use Formularium\FrameworkComposer;
 use Formularium\Model;
+use Formularium\Element;
 
 // set your framework composition.
 // For example, this builds HTML using Bootstrap as CSS and the Vue framework.
 $framework = FrameworkComposer::create(['HTML', 'Bootstrap']);
 
+// in real code you would pre-generate this and cache instead of runtime.
 $model = Model::fromStruct(modelData());
+
+// get a button dynamically
+$submitButton = $composer->element(
+    'Button',
+    [
+        Element::LABEL => 'Submit',
+        Element::SIZE => Element::SIZE_LARGE,
+    ]
+);
+
 ?><!DOCTYPE html>
 <html>
 <head>
@@ -27,8 +39,8 @@ $model = Model::fromStruct(modelData());
     <form method="POST" action="/post.php">
 <?php // render a form 
     echo $model->editable($framework);
+    echo $submitButton;
 ?>
-        <button type="submit" class="btn btn-primary">Submit</button>
     </form>
     <footer style="text-align: center; margin-top: 2em;">
         <small>
