@@ -9,7 +9,7 @@ use Formularium\Element;
 
 // set your framework composition.
 // For example, this builds HTML using Bootstrap as CSS and the Vue framework.
-$framework = FrameworkComposer::create(['HTML', 'Bootstrap']);
+$composer = FrameworkComposer::create(['HTML', 'Bootstrap']);
 
 // in real code you would pre-generate this and cache instead of runtime.
 $model = Model::fromStruct(modelData());
@@ -19,6 +19,7 @@ $submitButton = $composer->element(
     'Button',
     [
         Element::LABEL => 'Submit',
+        Formularium\Frontend\HTML\Element\Button::TYPE => 'submit',
         Element::SIZE => Element::SIZE_LARGE,
     ]
 );
@@ -28,7 +29,7 @@ $submitButton = $composer->element(
 <head>
     <meta charset='utf-8'>
     <title>Formularium pure PHP</title>
-    <?php echo $framework->htmlHead(); ?>
+    <?php echo $composer->htmlHead(); ?>
 </head>
 <body>
 <div class='container'>
@@ -38,7 +39,7 @@ $submitButton = $composer->element(
     </p>
     <form method="POST" action="/post.php">
 <?php // render a form 
-    echo $model->editable($framework);
+    echo $model->editable($composer);
     echo $submitButton;
 ?>
     </form>
@@ -46,7 +47,7 @@ $submitButton = $composer->element(
         <small>
             See <a href="https://github.com/Corollarium/Formularium">Formularium on GitHub</a>
         </small>
-        <?php echo $framework->htmlFooter(); ?>
+        <?php echo $composer->htmlFooter(); ?>
     </footer>
 </div>
 </html>
