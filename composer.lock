@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "21ad43460cf3bc4e9f3bff2679e575da",
+    "content-hash": "aed15ab1ca933b507e0b6d1a5ff71497",
     "packages": [
         {
             "name": "corollarium/formularium",
-            "version": "0.4.0",
+            "version": "v0.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Corollarium/Formularium.git",
-                "reference": "47f491e0f2e624ed0c9bd6df7a16f2c38e8631fa"
+                "reference": "192b450a7e07aec68540b961f449628cacd19b07"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Corollarium/Formularium/zipball/47f491e0f2e624ed0c9bd6df7a16f2c38e8631fa",
-                "reference": "47f491e0f2e624ed0c9bd6df7a16f2c38e8631fa",
+                "url": "https://api.github.com/repos/Corollarium/Formularium/zipball/192b450a7e07aec68540b961f449628cacd19b07",
+                "reference": "192b450a7e07aec68540b961f449628cacd19b07",
                 "shasum": ""
             },
             "require": {
@@ -57,7 +57,7 @@
             "keywords": [
                 "form"
             ],
-            "time": "2020-07-17T21:37:10+00:00"
+            "time": "2020-08-14T19:19:15+00:00"
         },
         {
             "name": "ezyang/htmlpurifier",
@@ -266,7 +266,7 @@
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.18.0",
+            "version": "v1.18.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
