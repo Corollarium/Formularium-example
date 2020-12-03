@@ -23,7 +23,7 @@ class Datatype_aaaaa extends \Formularium\Datatype\Datatype_string
     {
         $value = parent::validate($value, $model);
         
-        Equals::validate($value, ['value' => 'aaaaa'], $this, $model);
+        $value = Equals::validate($value, ['value' => 'aaaaa'], $model);
 
         return $value;
     }
