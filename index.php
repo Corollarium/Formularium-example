@@ -11,8 +11,8 @@ use Formularium\Element;
 // For example, this builds HTML using Bootstrap as CSS and the Vue framework.
 $composer = FrameworkComposer::create(['HTML', 'Bootstrap']);
 
-// in real code you would pre-generate this and cache instead of runtime.
-$model = Model::fromStruct(modelData());
+// get your model data.
+$model = modelData();
 
 // get a button dynamically
 $submitButton = $composer->element(

@@ -8,8 +8,9 @@ use Formularium\Model;
 
 // set your framework composition
 $framework = FrameworkComposer::create(['HTML', 'Bootstrap']);
+
 // build the model
-$model = Model::fromStruct(modelData());
+$model = modelData();
 
 // validate some data
 $validation = $model->validate($_POST);
