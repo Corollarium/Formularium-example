@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f78aea5016005fc3f407bcfa6a2a3508",
+    "content-hash": "4e0cf46506de73ce5c01b2482366f4b5",
     "packages": [
         {
             "name": "corollarium/formularium",
-            "version": "v0.9.0",
+            "version": "v0.10.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Corollarium/Formularium.git",
-                "reference": "ae1056c4a2569a5da3dc3b1aa7ccab2116e8025d"
+                "reference": "fd0391c1e34d6d764ae2f78e373f79996308f32c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Corollarium/Formularium/zipball/ae1056c4a2569a5da3dc3b1aa7ccab2116e8025d",
-                "reference": "ae1056c4a2569a5da3dc3b1aa7ccab2116e8025d",
+                "url": "https://api.github.com/repos/Corollarium/Formularium/zipball/fd0391c1e34d6d764ae2f78e373f79996308f32c",
+                "reference": "fd0391c1e34d6d764ae2f78e373f79996308f32c",
                 "shasum": ""
             },
             "require": {
@@ -25,7 +25,7 @@
                 "fakerphp/faker": "^1.13",
                 "haydenpierce/class-finder": "^0.4.2",
                 "nette/php-generator": "^3.5",
-                "php": ">=7.2.0",
+                "php": ">=7.3.0",
                 "respect/validation": "^1.1",
                 "thecodingmachine/safe": "^1.1"
             },
@@ -61,9 +61,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Corollarium/Formularium/issues",
-                "source": "https://github.com/Corollarium/Formularium/tree/v0.9.0"
+                "source": "https://github.com/Corollarium/Formularium/tree/v0.10.1"
             },
-            "time": "2021-09-07T13:38:03+00:00"
+            "time": "2021-09-28T18:24:11+00:00"
         },
         {
             "name": "ezyang/htmlpurifier",
@@ -231,16 +231,16 @@
         },
         {
             "name": "nette/php-generator",
-            "version": "v3.6.0",
+            "version": "v3.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/php-generator.git",
-                "reference": "2f28a34203ea2e730371d913fc06ae45b6e9baaa"
+                "reference": "bce6abcd4090ab5eec24b78f26c753c6525a425c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/php-generator/zipball/2f28a34203ea2e730371d913fc06ae45b6e9baaa",
-                "reference": "2f28a34203ea2e730371d913fc06ae45b6e9baaa",
+                "url": "https://api.github.com/repos/nette/php-generator/zipball/bce6abcd4090ab5eec24b78f26c753c6525a425c",
+                "reference": "bce6abcd4090ab5eec24b78f26c753c6525a425c",
                 "shasum": ""
             },
             "require": {
@@ -248,8 +248,8 @@
                 "php": ">=7.2 <8.2"
             },
             "require-dev": {
-                "nette/tester": "^2.0",
-                "nikic/php-parser": "^4.4",
+                "nette/tester": "^2.4",
+                "nikic/php-parser": "^4.11",
                 "phpstan/phpstan": "^0.12",
                 "tracy/tracy": "^2.3"
             },
@@ -293,26 +293,26 @@
             ],
             "support": {
                 "issues": "https://github.com/nette/php-generator/issues",
-                "source": "https://github.com/nette/php-generator/tree/v3.6.0"
+                "source": "https://github.com/nette/php-generator/tree/v3.6.2"
             },
-            "time": "2021-08-29T15:43:46+00:00"
+            "time": "2021-09-23T21:48:24+00:00"
         },
         {
             "name": "nette/utils",
-            "version": "v3.2.3",
+            "version": "v3.2.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/utils.git",
-                "reference": "5c36cc1ba9bb6abb8a9e425cf054e0c3fd5b9822"
+                "reference": "9cd80396ca58d7969ab44fc7afcf03624dfa526e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/utils/zipball/5c36cc1ba9bb6abb8a9e425cf054e0c3fd5b9822",
-                "reference": "5c36cc1ba9bb6abb8a9e425cf054e0c3fd5b9822",
+                "url": "https://api.github.com/repos/nette/utils/zipball/9cd80396ca58d7969ab44fc7afcf03624dfa526e",
+                "reference": "9cd80396ca58d7969ab44fc7afcf03624dfa526e",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.2 <8.1"
+                "php": ">=7.2 <8.2"
             },
             "conflict": {
                 "nette/di": "<3.0.6"
@@ -378,9 +378,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nette/utils/issues",
-                "source": "https://github.com/nette/utils/tree/v3.2.3"
+                "source": "https://github.com/nette/utils/tree/v3.2.5"
             },
-            "time": "2021-08-16T21:05:00+00:00"
+            "time": "2021-09-20T10:50:11+00:00"
         },
         {
             "name": "psr/container",

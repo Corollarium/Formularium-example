@@ -8,8 +8,7 @@ use Formularium\Model;
 use Formularium\Element;
 
 // set your framework composition.
-// For example, this builds HTML using Bootstrap as CSS and the Vue framework.
-$composer = FrameworkComposer::create(['HTML', 'Bootstrap']);
+$composer = FrameworkComposer::create(['HTML', 'HTMLValidation', 'Bootstrap']);
 
 // get your model data.
 $model = modelData();
@@ -38,7 +37,7 @@ $submitButton = $composer->element(
         This is a simple example of using <a href="https://github.com/Corollarium/Formularium">Formularium</a> in a framework agnostic way.
     </p>
     <form method="POST" action="/post.php">
-<?php // render a form 
+<?php // render a form
     echo $model->editable($composer);
     echo $submitButton;
 ?>
